@@ -1,6 +1,5 @@
 package andreapascarella.u5d2homework.entities;
 
-import andreapascarella.u5d2homework.enums.OrderState;
 import andreapascarella.u5d2homework.enums.TableState;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -118,15 +117,4 @@ public class AppConfig {
         return new Table(2, TableState.OCCUPATO);
     }
 
-    @Bean(name = "order")
-    public Order orderBean() {
-        List<Item> items = new ArrayList<>();
-        items.add(pizzaSalamiBean());
-        items.add(pizzaMargheritaBean());
-        items.add(lemonadeBean());
-        items.add(waterBean());
-        OrderState orderState = OrderState.IN_CORSO;
-        Table table = tableBean();
-        return new Order(items, orderState, table);
-    }
 }

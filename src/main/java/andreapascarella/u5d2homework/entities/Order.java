@@ -34,7 +34,7 @@ public class Order {
         this.table = table;
         this.orderNumber = counter;
         counter++;
-        this.importoOrdine = items.stream().mapToDouble(Item::getPrice).sum() + coperto;
+        this.importoOrdine = items.stream().mapToDouble(Item::getPrice).sum() + (coperto * table.getMaxCoperti());
         this.oraOrdine = LocalDateTime.now().getHour() + ":" + LocalDateTime.now().getMinute();
     }
 

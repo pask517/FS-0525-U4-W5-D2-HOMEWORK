@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0c3fb4c-2afc-4e75-9c34-21b87b4ddacf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/Drink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/MyRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/Pizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/Topping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/enums/OrderState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/enums/TableState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/U5d2homeworkApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/U5d2homeworkApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/MyRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/MyRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,22 +57,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.U5D1Application.executor": "Run",
-    "Spring Boot.U5d2homeworkApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Pask/Desktop/FS-0525-U4-W5-D2-HOMEWORK",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "actions.on.save"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.U5D1Application.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.U5d2homeworkApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Pask/Desktop/FS-0525-U4-W5-D2-HOMEWORK&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
