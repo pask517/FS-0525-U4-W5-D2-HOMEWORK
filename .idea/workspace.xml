@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0c3fb4c-2afc-4e75-9c34-21b87b4ddacf" name="Changes" comment="" />
+    <list default="true" id="e0c3fb4c-2afc-4e75-9c34-21b87b4ddacf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/Drink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/MyRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/Pizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/entities/Topping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/enums/OrderState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/enums/TableState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/U5d2homeworkApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/andreapascarella/u5d2homework/U5d2homeworkApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +27,14 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -33,10 +56,13 @@
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="399sl1JoOldFHV4xQBzUOFgdi9J" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,6 +74,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.U5D1Application.executor": "Run",
+    "Spring Boot.U5d2homeworkApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
