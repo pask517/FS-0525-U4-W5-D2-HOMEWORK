@@ -2,7 +2,6 @@ package andreapascarella.u5d2homework.entities;
 
 import andreapascarella.u5d2homework.enums.OrderState;
 import lombok.Getter;
-import org.springframework.beans.factory.annotation.Value;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -22,19 +21,15 @@ public class Order {
 
     private double importoOrdine;
 
-    @Value("${order.costoCoperto}")
-    private int coperto;
-
     private String oraOrdine;
 
-
-    public Order(List<Item> items, OrderState orderState, Table table) {
+    public Order(List<Item> items, Table table) {
         this.items = items;
-        this.orderState = orderState;
+        this.orderState = OrderState.IN_CORSO;
         this.table = table;
         this.orderNumber = counter;
         counter++;
-        this.importoOrdine = items.stream().mapToDouble(Item::getPrice).sum() + (coperto * table.getMaxCoperti());
+        this.importoOrdine = items.stream().mapToDouble(Item::getPrice).sum() + (table.getCostoCoperto() * table.getMaxCoperti());
         this.oraOrdine = LocalDateTime.now().getHour() + ":" + LocalDateTime.now().getMinute();
     }
 

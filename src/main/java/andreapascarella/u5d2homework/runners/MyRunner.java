@@ -1,8 +1,10 @@
 package andreapascarella.u5d2homework.runners;
 
 import andreapascarella.u5d2homework.U5d2homeworkApplication;
-import andreapascarella.u5d2homework.entities.*;
-import andreapascarella.u5d2homework.enums.OrderState;
+import andreapascarella.u5d2homework.entities.Item;
+import andreapascarella.u5d2homework.entities.Menu;
+import andreapascarella.u5d2homework.entities.Order;
+import andreapascarella.u5d2homework.entities.Table;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Component;
@@ -14,16 +16,18 @@ public class MyRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(U5d2homeworkApplication.class);
 
         Menu m = (Menu) ctx.getBean("menu");
 
         m.printMenu();
 
-        Table table = (Table) ctx.getBean("table");
+        Table table1 = (Table) ctx.getBean("table");
 
-        Order o = new Order(List.of((Pizza) ctx.getBean("pizza_margherita"), (Pizza) ctx.getBean("hawaiian_pizza"), (Drink) ctx.getBean("lemonade"), (Drink) ctx.getBean("water")), OrderState.IN_CORSO, (Table) ctx.getBean("table"));
+        Order o = new Order(List.of((Item) ctx.getBean("pizza_margherita"), (Item) ctx.getBean("hawaiian_pizza"), (Item) ctx.getBean("lemonade"), (Item) ctx.getBean("water")), table1);
 
         o.printOrder();
+
     }
 }

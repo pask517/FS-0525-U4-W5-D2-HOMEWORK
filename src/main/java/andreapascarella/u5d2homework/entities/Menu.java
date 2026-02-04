@@ -2,15 +2,15 @@ package andreapascarella.u5d2homework.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Getter
 @ToString
-@NoArgsConstructor
 @AllArgsConstructor
+@Component
 public class Menu {
     private List<Pizza> pizzaList;
     private List<Drink> drinkList;
@@ -29,6 +29,5 @@ public class Menu {
         System.out.println("DRINKS");
         this.drinkList.forEach(System.out::println);
         System.out.println();
-
     }
 }

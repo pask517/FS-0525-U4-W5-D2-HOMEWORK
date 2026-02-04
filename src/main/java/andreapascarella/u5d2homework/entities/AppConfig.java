@@ -1,6 +1,7 @@
 package andreapascarella.u5d2homework.entities;
 
 import andreapascarella.u5d2homework.enums.TableState;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
@@ -88,33 +89,47 @@ public class AppConfig {
         return new Drink("Wine", 607, 7.49);
     }
 
-    @Bean(name = "menu")
-    public Menu menuBean() {
-        List<Pizza> pizzaList = new ArrayList<>();
-        List<Drink> drinkList = new ArrayList<>();
-        List<Topping> toppingsList = new ArrayList<>();
+    @Bean("pizzas")
+    List<Pizza> pizzaList() {
+        List<Pizza> pizzas = new ArrayList<>();
+        pizzas.add(pizzaMargheritaBean());
+        pizzas.add(pizzaHawaiianBean());
+        pizzas.add(pizzaSalamiBean());
+        pizzas.add(pizzaSalamiXlBean());
+        return pizzas;
+    }
 
-        pizzaList.add(pizzaMargheritaBean());
-        pizzaList.add(pizzaHawaiianBean());
-        pizzaList.add(pizzaSalamiBean());
-        pizzaList.add(pizzaSalamiXlBean());
+    @Bean("drinks")
+    List<Drink> drinksList() {
+        List<Drink> drinks = new ArrayList<>();
+        drinks.add(lemonadeBean());
+        drinks.add(waterBean());
+        drinks.add(wineBean());
+        return drinks;
+    }
 
-        drinkList.add(lemonadeBean());
-        drinkList.add(waterBean());
-        drinkList.add(wineBean());
-
-        toppingsList.add(toppingTomatoBean());
-        toppingsList.add(toppingCheeseBean());
-        toppingsList.add(toppingSalamiBean());
-        toppingsList.add(toppingHamBean());
-        toppingsList.add(toppingPineappleBean());
-
-        return new Menu(pizzaList, drinkList, toppingsList);
+    @Bean("toppings")
+    List<Topping> toppingsList() {
+        List<Topping> toppings = new ArrayList<>();
+        toppings.add(toppingTomatoBean());
+        toppings.add(toppingCheeseBean());
+        toppings.add(toppingSalamiBean());
+        toppings.add(toppingHamBean());
+        toppings.add(toppingPineappleBean());
+        return toppings;
     }
 
     @Bean(name = "table")
-    public Table tableBean() {
-        return new Table(2, TableState.OCCUPATO);
+    public Table tableBean(@Value("${order.costoCoperto}") double coperto) {
+        return new Table(2, TableState.OCCUPATO, coperto);
     }
+
+//  .   ____          _            __ _ _
+// /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+//( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+// \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+//  '  |____| .__|_| |_|_| |_\__, | / / / /
+//  =========|_|==============|___/=/_/_/_/
+
 
 }

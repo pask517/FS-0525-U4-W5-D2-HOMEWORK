@@ -14,10 +14,13 @@ public class Table {
 
     private TableState tableState;
 
-    public Table(int maxCoperti, TableState tableState) {
+    private double costoCoperto;
+
+    public Table(int maxCoperti, TableState tableState, double costoCoperto) {
         this.maxCoperti = maxCoperti;
         this.tableState = tableState;
         this.number = counter;
+        this.costoCoperto = costoCoperto;
         counter++;
     }
 
