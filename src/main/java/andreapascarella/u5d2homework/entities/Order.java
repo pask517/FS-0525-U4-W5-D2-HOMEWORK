@@ -2,6 +2,7 @@ package andreapascarella.u5d2homework.entities;
 
 import andreapascarella.u5d2homework.enums.OrderState;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -17,6 +18,7 @@ public class Order {
 
     private OrderState orderState;
 
+    @Setter
     private Table table;
 
     private double importoOrdine;
@@ -36,7 +38,6 @@ public class Order {
     public void addToOrder(Item item) {
         this.items.add(item);
     }
-
 
     public void printOrder() {
         System.out.println("Order{" +
