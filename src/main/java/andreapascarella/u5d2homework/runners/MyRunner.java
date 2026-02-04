@@ -27,7 +27,10 @@ public class MyRunner implements CommandLineRunner {
 
         Order o = new Order(List.of((Item) ctx.getBean("pizza_margherita"), (Item) ctx.getBean("hawaiian_pizza"), (Item) ctx.getBean("lemonade"), (Item) ctx.getBean("water")), table1);
 
+        System.out.println(o.getTable().getCostoCoperto());
+
         o.printOrder();
 
+        ctx.close();
     }
 }
